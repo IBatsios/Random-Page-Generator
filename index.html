@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Page Generator</title>
+</head>
+<body>
+	<img src="template.png" onclick="randomPage()">
+</body>
+<script type="text/javascript">
+	function randomPage () {
+	var rand = Math.round(Math.random()*3)+1;
+
+	if (rand == 1) {
+		window.open("http:/www.google.com", "_self");
+	} else if (rand == 2) {
+		window.open("http:/www.facebook.com", "_self");
+	} else if (rand == 3) {
+		window.open("http:/www.twitter.com", "_self");
+	} else if (rand == 4) {
+		window.open("http:/www.yahoo.com", "_self");
+	}
+}
+</script>
+</html>
